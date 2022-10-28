@@ -76,7 +76,11 @@ console.log(anagramFunc("jupiter", "jubiter")); // expected output: false
 // An anagram is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or racecar.
 
 // TODO: write your code below this line
-
+const palindromeFunc = function (string) {
+    a = string.replace(' ', '').toLowerCase();
+    b = a.split('').reverse().join('');
+    return a === b
+}
 
 // TODO: write your code above this line
 
