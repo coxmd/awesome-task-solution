@@ -54,7 +54,15 @@ console.log(information.interest.outdoor[0].hiking[2]);
 // An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
 
 // TODO: write your code below this line
-
+function anagramFunc(x, y) {
+    let a = x.split("").sort().join("");
+    let b = y.split("").sort().join("");
+    if (a === b) {
+        console.log('true');
+    } else {
+        console.log('false');
+    }
+}
 
 // TODO: write your code above this line
 
