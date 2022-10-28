@@ -76,7 +76,7 @@ console.log(anagramFunc("jupiter", "jubiter")); // expected output: false
 // An anagram is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or racecar.
 
 // TODO: write your code below this line
-const palindromeFunc = function (string) {
+function palindromeFunc(string) {
     a = string.replace(' ', '').toLowerCase();
     b = a.split('').reverse().join('');
     return a === b
@@ -107,7 +107,19 @@ console.log(palindromeFunc("nurse run")); // expected output: false
 function getGrade(score) {
     let grade;
     // Write your code here
-    
+    if (score > 25 && score <= 30) {
+        grade = 'A';
+    } else if (score > 20 && score <= 25) {
+        grade = 'B';
+    } else if (score > 15 && score <= 20) {
+        grade = 'C';
+    } else if (score > 10 && score <= 15) {
+        grade = 'D';
+    } else if (score > 5 && score <= 10) {
+        grade = 'E';
+    } else {
+        grade = 'F';
+    }
     return grade;
 }
 // TODO: write your code above this line
