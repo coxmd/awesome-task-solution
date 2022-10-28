@@ -138,7 +138,15 @@ console.log(getGrade(25)); // expected output: B
  */
 
 // TODO: write your code below this line
+class Polygon {
+    constructor(lengths) {
+        this.lengths = lengths;
+    }
 
+    perimeter(lengths) {
+        return lengths.reduce((accumulator,current) => accumulator + current, 0)
+    }
+}
 
 // TODO: write your code above this line
 
@@ -149,7 +157,7 @@ console.log(getGrade(25)); // expected output: B
  */
 
 // TODO: write your code below this line
-
+const obj = new Polygon();
 
 // TODO: write your code above this line
 
