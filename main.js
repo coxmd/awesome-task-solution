@@ -57,11 +57,8 @@ console.log(information.interest.outdoor[0].hiking[2]);
 function anagramFunc(x, y) {
     let a = x.split("").sort().join("");
     let b = y.split("").sort().join("");
-    if (a === b) {
-        console.log('true');
-    } else {
-        console.log('false');
-    }
+    
+    return a === b;
 }
 
 // TODO: write your code above this line
@@ -242,7 +239,28 @@ console.log(fizzBuzz());
 // I put this one here to tease up your brain for a few minutes.
 
 // TODO: write your code below this line
-
+function baseBallPointer(ops) {
+    const newArray = [];
+    let sumOfNewArray = 0;
+    
+    for (let x = 0; x < ops.length; x++) {
+        if (ops[x] === '+') {
+            newArray.push(newArray[newArray.length - 1] + newArray[newArray.length - 2]);
+        } else if (ops[x] === 'D') {
+            newArray.push(2 * newArray[newArray.length - 1])
+        }else if (ops[x] === 'C') {
+            newArray.pop();
+        } else {
+            newArray.push(parseInt(ops[x]))
+        }
+    }
+    
+    newArray.forEach(a => {
+        sumOfNewArray += a
+    });
+    
+    return sumOfNewArray;
+}
 
 // TODO: write your code above this line
 
