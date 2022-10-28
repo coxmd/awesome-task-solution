@@ -23,7 +23,7 @@
 
 const myArray = [4, -2, 6, 9, 1, 12, 6, 2, 10];
 // TODO: write your code below this line
-
+const sumOfArray = myArray.filter(el => el > 5).reduce((accumulator, current) => accumulator + current, 0);
 
 // expected output: 43
 // TODO: write your code below this line
