@@ -43,7 +43,7 @@ const information = {
 }
 
 // TODO: write your code below this line
-
+console.log(information.interest.outdoor[0].hiking[2]);
 
 // expected output: 'Menengai Crater'
 // TODO: write your code above this line
